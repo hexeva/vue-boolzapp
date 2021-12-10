@@ -216,6 +216,22 @@ ul{
     color: lightgray;
     font-size: 10px;
 }
+/* send message bar */
+.send-message{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.send-message input{
+    width: 80%;
+    padding:15px;
+    border: 1px solid #eaeaea;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.send-message > .icons{
+    color:grey;
+}
 
 
 
@@ -224,10 +240,15 @@ ul{
     background-color: #e9ebea;
 }
 
-.received{
-    background-color: green;
+.sent{
     text-align: right;
 }
+
+.sent > .single-chat{
+    background-color: #d5f9ba;
+}
+
+
 
 
 
