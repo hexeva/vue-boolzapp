@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 /* COMMON */
+
 header{
     width: 100%;
     height: 70px;
@@ -16,6 +17,9 @@ header{
 img{
     width: 100%;
     object-fit: contain;
+}
+ul{
+    list-style-type: none;
 }
 
 .text{
@@ -57,6 +61,7 @@ img{
 
 /* WEB APP */
 .container{
+    background-color: white;
     width: 90%;
     min-width:800px;
     margin: auto;
@@ -93,11 +98,11 @@ img{
 .round-icon{
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
     cursor: pointer;
 }
-.round-icon img{
-    border-radius: 50%;
-}
+
 .icons{
     margin: 0 10px;
     color: #b1b1b1;
@@ -109,6 +114,7 @@ img{
     font-weight: bolder;
 }
 /* end header */
+
 /* MAIN */
 .main-app{
     height: calc(100% - 70px); 
@@ -118,8 +124,7 @@ img{
 /* contacts col */
 .contact-col{
     height: 100%;
-    /* test */
-    background-color: coral;
+  
 }
 .chat-col{
     height: 100%;
@@ -152,9 +157,43 @@ img{
     color: grey;
 }
 
-.concersations{
+.conversations{
     width: 100%;
-    background-color: lightgrey;
+    background-color:#fafafa;
+    padding: 12px;
+}
+.conversations input{
+    width: 100%;
+    padding: 9px;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+}
+.contacts{
+    width: 100%;
+}
+
+.single-contact{
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px solid #fafafa;
+    
+}
+.single-contact .main-text{
+    margin-left: 20px;
+}
+.contact-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+/* ACTIVE CLASSES */
+.is-selected-contact{
+    background-color: #e9ebea;
 }
 
 
