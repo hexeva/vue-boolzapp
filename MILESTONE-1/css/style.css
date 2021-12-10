@@ -5,6 +5,40 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: antiquewhite;
+
+/* MAIN PAGE */
+.main-page{
+    width: 100%;
+    height: 100vh;
+  
 }
+.main-bottom{
+    width: 100%;
+    height:calc(100vh - 120px);
+    /* test */
+    background-color: aquamarine;
+}
+
+.main-top{
+    width: 100%;
+    height:120px;
+    /* test */
+    background-color: #019688;
+}
+/* END MAIN PAGE */
+
+/* WEB APP */
+.container{
+    width: 90%;
+    margin: auto;
+    height:calc(100vh - 80px);
+    position: relative;
+    bottom:80px;
+  
+
+    /* test */
+    background-color:chocolate ;
+}
+/* END WEB APP */
+
+
