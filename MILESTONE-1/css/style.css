@@ -199,14 +199,22 @@ ul{
     height:calc(100% - 70px);
     background-image: url(../img/mine.jpg);
     background-size: auto;
-    padding: 50px 70px;
+    padding: 50px 80px;
 }
 
 .single-chat{
     padding: 15px;
+    justify-content: center;
     background-color: white;
-    display: inline-block;
     border-radius: 10px;
+    line-height: 20px;
+    display: inline-block;
+    
+}
+.timer{
+    text-align: right;
+    color: lightgray;
+    font-size: 10px;
 }
 
 
@@ -217,9 +225,11 @@ ul{
 }
 
 .received{
-    color: green;
+    background-color: green;
     text-align: right;
 }
+
+
 
 /* END WEB APP */
 
