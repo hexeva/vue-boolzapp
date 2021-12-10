@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* COMMON */
+header{
+    width: 100%;
+    height: 50px;
+    /* test */
+    background-color: cornsilk;
+}
+/* END COMMON */
 
 
 /* MAIN PAGE */
@@ -14,14 +22,14 @@
 }
 .main-bottom{
     width: 100%;
-    height:calc(100vh - 120px);
+    height:calc(100vh - 140px);
     /* test */
     background-color: aquamarine;
 }
 
 .main-top{
     width: 100%;
-    height:120px;
+    height:140px;
     /* test */
     background-color: #019688;
 }
@@ -33,7 +41,7 @@
     margin: auto;
     height:calc(100vh - 80px);
     position: relative;
-    bottom:80px;
+    bottom:100px;
   
 
     /* test */
