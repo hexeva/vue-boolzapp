@@ -88,11 +88,14 @@ const app = new Vue ({
                     }
                 ],
             },
-        ]
+        ],
         // end contacts
+        messageDate:dayjs().format("DD/MM/YYYY HH:MM:s"),
+        
         
     },
     // end data
     methods:{}
     // end methods
 });
+

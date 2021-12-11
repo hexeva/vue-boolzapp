@@ -79,41 +79,14 @@
                             <div class="contacts">
                                 <ul>
                                     <!-- single template -->
-                                    <li>
+                                    <li v-for="(contact,index) in contacts">
                                         <div class="single-contact">
-                                            <div class="contact-icon"><img src="img/avatar_1.jpg" alt="avatar 1 icon"></div>
-                                            <div class="main-text">Michele</div>
+                                            <div class="contact-icon"><img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name"></div>
+                                            <div class="main-text">{{contact.name}}</div>
                                         </div>
                                     </li>
                                     <!-- single template -->
-                                    <li>
-                                        <div class="single-contact is-selected-contact">
-                                            <div class="contact-icon"><img src="img/avatar_2.jpg" alt="avatar 2 icon"></div>
-                                            <div class="main-text">Fabio</div>
-                                        </div>
-                                    </li>
-                                    <!-- single template -->
-                                    <li>
-                                        <div class="single-contact">
-                                            <div class="contact-icon"><img src="img/avatar_3.jpg" alt="avatar 3 icon"></div>
-                                            <div class="main-text">Samuele</div>
-                                        </div>
-                                    </li>
-                                    <!-- single template -->
-                                    <li>
-                                        <div class="single-contact">
-                                            <div class="contact-icon"><img src="img/avatar_4.jpg" alt="avatar 4 icon"></div>
-                                            <div class="main-text">Ettore</div>
-                                        </div>
-                                    </li>
-                                    <!-- single template -->
-                                    <li>
-                                        <div class="single-contact">
-                                            <div class="contact-icon"><img src="img/avatar_5.jpg" alt="avatar 5 icon"></div>
-                                            <div class="main-text">Luigi</div>
-                                        </div>
-                                    </li>
-                                    <!-- single template -->
+                             
                                 </ul>
                             </div>
 
@@ -125,19 +98,19 @@
                         <div class="main-cols right">
                             <div class="chat-list ">
                                 <ul>
-                                    <!-- single template  -->
+                                    <!-- single template  messaggio inviato-->
                                     <li class="sent">
                                         <div class="single-chat">
                                             <div class="main-text">Ciao come stai, io tutto bene e tu come stai?</div>
-                                            <div class="timer">21/04/21</div>
+                                            <div class="timer">{{messageDate}}</div>
                                         </div>
                                     </li>
                                     <!-- end single template -->
-                                     <!-- single template  -->
-                                     <li>
+                                     <!-- single template messaggio ricevuto -->
+                                     <li class="received">
                                         <div class="single-chat">
                                             <div class="main-text">Ciao come stai, io tutto bene e tu come stai?</div>
-                                            <div class="timer">21/04/21</div>
+                                            <div class="timer">{{messageDate}}</div>
                                         </div>
                                     </li>
                                     <!-- end single template -->
@@ -175,7 +148,7 @@
     <!-- end root -->
     
 
-
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

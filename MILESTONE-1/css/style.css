@@ -239,6 +239,14 @@ ul{
 .is-selected-contact{
     background-color: #e9ebea;
 }
+.received{
+    text-align: left;
+    
+}
+.received > .single-chat{
+    background-color: white;
+}
+
 
 .sent{
     text-align: right;
