@@ -211,6 +211,7 @@ ul{
     line-height: 20px;
     display: inline-block;
     max-width: 50%;
+    min-width: 35%;
     
 }
 .timer{
