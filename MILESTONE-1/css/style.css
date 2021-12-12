@@ -205,7 +205,7 @@ ul{
 
 .single-chat{
     padding: 15px;
-    justify-content: center;
+    text-align: left;
     background-color: white;
     border-radius: 10px;
     line-height: 20px;
