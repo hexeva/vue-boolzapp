@@ -3,6 +3,8 @@ Vue.config.devtools = true;
 const app = new Vue ({
     el:'#root',
     data:{
+        activeContact:0,
+        
 
         contacts: [
             {
@@ -95,7 +97,15 @@ const app = new Vue ({
         
     },
     // end data
-    methods:{}
+    methods:{
+
+        contactChat:function(index){
+            if(index != this.activeContact)
+                this.activeContact = index;
+        }
+        
+            
+    }
     // end methods
 });
 
