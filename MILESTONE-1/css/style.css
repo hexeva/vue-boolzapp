@@ -161,9 +161,20 @@ ul{
     background-color:#fafafa;
     padding: 12px;
 }
+
+.input-wrapper{
+    position: relative;
+}
+
+.input-wrapper > .icons{
+    position: absolute;
+    top:20px;
+    left:0px;
+}
+
 .conversations input{
     width: 100%;
-    padding: 9px;
+    padding: 20px 20px 20px 45px;
     text-decoration: none;
     border: 1px solid #eaeaea;
 }
@@ -200,7 +211,7 @@ ul{
     background-image: url(../img/mine.jpg);
     background-size: auto;
     padding: 50px 80px;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 .single-chat{
