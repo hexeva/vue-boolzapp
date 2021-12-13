@@ -42,21 +42,12 @@ ul{
 .main-page{
     width: 100%;
     height: 100vh;
-  
-}
-.main-bottom{
-    width: 100%;
-    height:calc(100vh - 140px);
-    /* test */
-    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
 }
 
-.main-top{
-    width: 100%;
-    height:140px;
-    /* test */
-    background-color: #019688;
-}
+
 /* END MAIN PAGE */
 
 /* WEB APP */
@@ -65,10 +56,8 @@ ul{
     width: 90%;
     min-width:800px;
     margin: auto;
-    height:calc(100vh - 60px);
-    position: relative;
-    bottom:110px;
-   
+    height:90%
+    
 }
 
 /* header */
