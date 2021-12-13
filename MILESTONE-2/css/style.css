@@ -223,6 +223,7 @@ ul{
     display: inline-block;
     max-width: 50%;
     min-width: 35%;
+    margin: 20px 0;
     
 }
 .timer{

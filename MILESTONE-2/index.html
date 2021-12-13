@@ -105,20 +105,20 @@
                             <div class="chat-list ">
                                 <ul>
                                     <!-- single template  messaggio inviato-->
-                                    <li class="sent">
+                                    <li v-for=" messages in contacts[activeContact].messages" :class="messages.status">
                                         <div class="single-chat">
-                                            <div class="main-text">ciao</div>
+                                            <div class="main-text">{{messages.text}}</div>
                                             <div class="timer">{{messageDate}}</div>
                                         </div>
                                     </li>
                                     <!-- end single template -->
                                      <!-- single template messaggio ricevuto -->
-                                     <li class="received">
+                                     <!-- <li class="received">
                                         <div class="single-chat">
-                                            <div class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur a adipisci explicabo quos voluptates delectus aspernatur et, consectetur accusamus itaque eaque, illo debitis quam sapiente ipsam quis, qui cum odit!</div>
+                                            <div class="main-text">ciao come va</div>
                                             <div class="timer">{{messageDate}}</div>
                                         </div>
-                                    </li>
+                                    </li> -->
                                     <!-- end single template -->
                                     
 
