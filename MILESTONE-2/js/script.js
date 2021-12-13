@@ -97,6 +97,9 @@ const app = new Vue ({
         accessDate:dayjs().format("HH:MM:s"),
         myAnswer:'',
         
+        autoanswer:'ok',
+        
+        
         
     },
     // end data
@@ -116,8 +119,20 @@ const app = new Vue ({
                 });
                 this.myAnswer='';
             }
-           
+   
+        },
+        timeAnswer:function(activeContact){
+            setTimeout(function(){
+                
+                this.contacts[activeContact].messages.push({
+                    text:autoanswer,
+                    status:'received',
+                });
+
+
+            },1000);
         }
+       
         
             
     }
