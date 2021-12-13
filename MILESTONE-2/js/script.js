@@ -110,10 +110,10 @@ const app = new Vue ({
                 this.activeContact = index;
         },
 
-        answer:function(activeContact){
+        answer:function(){
             const trimmedAnswer = this.myAnswer.trim();
             if(trimmedAnswer.length > 0){
-                this.contacts[activeContact].messages.push({
+                this.contacts[this.activeContact].messages.push({
                     text:trimmedAnswer,
                     status:'sent',
                 });
@@ -121,11 +121,11 @@ const app = new Vue ({
             }
    
         },
-        timeAnswer:function(activeContact){
-            setTimeout(function(){
+        timeAnswer:function(){
+            setTimeout( () => {
                 
-                this.contacts[activeContact].messages.push({
-                    text:autoanswer,
+                this.contacts[this.activeContact].messages.push({
+                    text:this.autoanswer,
                     status:'received',
                 });
 
