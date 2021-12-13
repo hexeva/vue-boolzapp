@@ -94,6 +94,7 @@ const app = new Vue ({
         // end contacts
         messageDate:dayjs().format("DD/MM/YYYY HH:MM:s"),
         accessDate:dayjs().format("HH:MM:s"),
+        myAnswer:'',
         
         
     },
@@ -103,6 +104,17 @@ const app = new Vue ({
         contactChat:function(index){
             if(index != this.activeContact)
                 this.activeContact = index;
+        },
+
+        answer:function(){
+            const trimmedAnswer = this.myAnswer.trim();
+            if(trimmedAnswer.length > 0){
+                this.contacts[activeContact].messages.push({
+                    text:trimmedAnswer,
+                    status:'sent',
+                });
+                this.myAnswer='';
+            }
         }
         
             

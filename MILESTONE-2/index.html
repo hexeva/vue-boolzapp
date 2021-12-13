@@ -104,7 +104,7 @@
                         <div class="main-cols right">
                             <div class="chat-list ">
                                 <ul>
-                                    <!-- single template  messaggio inviato-->
+                                    <!-- single template  messaggi inviati/ricevuti-->
                                     <li v-for=" messages in contacts[activeContact].messages" :class="messages.status">
                                         <div class="single-chat">
                                             <div class="main-text">{{messages.text}}</div>
@@ -121,7 +121,7 @@
 
                             <div class="send-message">
                                 <span class="icons"><i class="far fa-smile"></i></span>
-                                <input type="text" placeholder="scrivi un messaggio">
+                                <input @keyup.enter="answer" type="text" placeholder="scrivi un messaggio">
                                 <span class="icons"><i class="fas fa-microphone"></i></span>
                             </div>
                             
