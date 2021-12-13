@@ -121,7 +121,7 @@
 
                             <div class="send-message">
                                 <span class="icons"><i class="far fa-smile"></i></span>
-                                <input @keyup.enter="answer" type="text" placeholder="scrivi un messaggio">
+                                <input v-model="myAnswer" @keyup.enter="answer(activeContact)" type="text" placeholder="scrivi un messaggio">
                                 <span class="icons"><i class="fas fa-microphone"></i></span>
                             </div>
                             

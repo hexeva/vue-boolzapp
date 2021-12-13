@@ -5,6 +5,7 @@ const app = new Vue ({
     data:{
         activeContact:0,
         
+        
 
         contacts: [
             {
@@ -106,7 +107,7 @@ const app = new Vue ({
                 this.activeContact = index;
         },
 
-        answer:function(){
+        answer:function(activeContact){
             const trimmedAnswer = this.myAnswer.trim();
             if(trimmedAnswer.length > 0){
                 this.contacts[activeContact].messages.push({
@@ -115,6 +116,7 @@ const app = new Vue ({
                 });
                 this.myAnswer='';
             }
+           
         }
         
             
