@@ -93,6 +93,7 @@ const app = new Vue ({
         ],
         // end contacts
         messageDate:dayjs().format("DD/MM/YYYY HH:MM:s"),
+        accessDate:dayjs().format("HH:MM:s"),
         
         
     },

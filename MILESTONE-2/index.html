@@ -41,10 +41,10 @@
                         <div class="header-bar right">
                             <div class="user-info">
                                 <div class="round-icon">
-                                    <img src="img/avatar_3.jpg" alt="Samuele icon">
+                                    <img :src="'img/avatar' + contacts[activeContact].avatar + '.jpg'" alt="contacts icon">
                                 </div>
-                                <div class="main-text">Samuele
-                                    <div class="text">ultimo accesso oggi alle</div>
+                                <div class="main-text">{{contacts[activeContact].name}}
+                                    <div class="text">{{'ultimo accesso oggi alle ' + accessDate}}</div>
                                 </div>
                             </div>
 
@@ -111,15 +111,7 @@
                                             <div class="timer">{{messageDate}}</div>
                                         </div>
                                     </li>
-                                    <!-- end single template -->
-                                     <!-- single template messaggio ricevuto -->
-                                     <!-- <li class="received">
-                                        <div class="single-chat">
-                                            <div class="main-text">ciao come va</div>
-                                            <div class="timer">{{messageDate}}</div>
-                                        </div>
-                                    </li> -->
-                                    <!-- end single template -->
+                                   
                                     
 
                                 </ul>

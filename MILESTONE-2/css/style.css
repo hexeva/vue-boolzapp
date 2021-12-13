@@ -101,6 +101,7 @@ ul{
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .icons{
