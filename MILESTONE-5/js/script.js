@@ -98,6 +98,7 @@ const app = new Vue ({
         myAnswer:'',
         autoanswer:'ok',
         searchContacts:'',
+        isHidden:true,
 
         
         
@@ -144,12 +145,19 @@ const app = new Vue ({
                 }
             });
         },
+
+    showOptions:function(index){
+        
+    },
  
  
        
     }
-
-    
     // end methods
 });
 
+
+
+// <div @click="selectThumb(index)" v-for="(element,index) in carouselSlides" class="single-thumb" :class="{'active':index === activeImg}">
+// <img :src="element.image" :alt="element.title">
+// </div> 
