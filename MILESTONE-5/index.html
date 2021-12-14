@@ -105,8 +105,14 @@
                                     <!-- single template  messaggi inviati/ricevuti-->
                                     <li v-for=" messages in contacts[activeContact].messages" :class="messages.status">
                                         <div class="single-chat">
+                                            <span class="icons chevron"><i class="fas fa-chevron-down"></i></span>
                                             <div class="main-text">{{messages.text}}</div>
                                             <div class="timer">{{messages.date}}</div>
+                                            <!-- menu a tendina -->
+                                            <div class="hidden-menu hidden">
+                                                <div class="text">Message info</div>
+                                                <div class="text">Delete message</div>
+                                            </div>
                                         </div>
                                     </li>
                                    

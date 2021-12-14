@@ -99,6 +99,7 @@ ul{
     font-size: 22px;
     cursor: pointer;
 }
+
 .main-text{
     font-size: 16px;
     font-weight: bolder;
@@ -204,6 +205,8 @@ ul{
     overflow-y: auto;
 }
 
+
+
 .single-chat{
     padding: 15px;
     text-align: left;
@@ -216,6 +219,38 @@ ul{
     margin: 20px 0;
     position: relative;
     
+}
+
+.icons.chevron{
+    margin: 0 10px;
+    color: #b1b1b1;
+    font-size: 17px;
+    cursor: pointer;
+    position:absolute;
+    top: 7px;
+    right: 0;
+}
+.hidden-menu{
+    width: 60%;
+    height:100px;
+    background-color:white;
+    position: absolute;
+    top: 25px;
+    right: 7px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 4px 3px black);
+}
+
+.hidden-menu > div{
+    margin: 5px 0;
+    font-size: 16px;
+    color: gray;
+    font-weight: bold;
+    cursor: pointer;
 }
 .timer{
     text-align: right;
@@ -263,6 +298,10 @@ ul{
 
 .sent > .single-chat{
     background-color: #d5f9ba;
+}
+
+.hidden{
+    display: none;
 }
 
 
