@@ -1,0 +1,274 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #eaeaea;
+    padding: 5px 0;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+ul{
+    list-style-type: none;
+}
+
+.text{
+    color: #b1b1b1;
+    font-size: 14px;
+}
+.left{
+    width: 40%;
+    border-right:1px solid lightgrey;
+    
+}
+.right{
+    width: calc(100% - 40%);
+}
+
+
+
+
+/* MAIN PAGE */
+.main-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
+}
+
+
+/* END MAIN PAGE */
+
+/* WEB APP */
+.container{
+    background-color: white;
+    width: 90%;
+    min-width:800px;
+    margin: auto;
+    height:90%
+    
+}
+
+/* header */
+.header-bar{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    
+}
+
+/* header bar */
+.user-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.user-options{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.round-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.icons{
+    margin: 0 10px;
+    color: #b1b1b1;
+    font-size: 22px;
+    cursor: pointer;
+}
+.main-text{
+    font-size: 16px;
+    font-weight: bolder;
+    
+}
+/* end header */
+
+/* MAIN */
+.main-app{
+    height: calc(100% - 70px); 
+    display: flex;
+}
+
+/* contacts col */
+.main-cols{
+    height: 100%;
+    overflow: hidden;
+  
+}
+
+.bell{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align:center;
+    margin-right: 10px;
+}
+.bell i{
+    font-size: 20px;
+    color: #8edafb;
+}
+
+.notifications{
+    background-color:#8edafb;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+.notifications a{
+    color: grey;
+}
+
+.conversations{
+    width: 100%;
+    background-color:#fafafa;
+    padding: 12px;
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.input-wrapper > .icons{
+    position: absolute;
+    top:20px;
+    left:0px;
+}
+
+.conversations input{
+    width: 100%;
+    padding: 20px 20px 20px 45px;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+}
+.contacts{
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.single-contact{
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px solid #fafafa;
+    
+}
+.single-contact .main-text{
+    margin-left: 20px;
+}
+.contact-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+/* RIGHT COL */
+.send-message{
+    width: 100%;
+    height: 70px;
+    background-color: #e9ebea;
+}
+.chat-list{
+    width: 100%;
+    height:calc(100% - 70px);
+    background-image: url(../img/mine.jpg);
+    background-size: auto;
+    padding: 50px 80px;
+    overflow-y: auto;
+}
+
+.single-chat{
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 20px;
+    display: inline-block;
+    max-width: 50%;
+    min-width: 35%;
+    margin: 20px 0;
+    position: relative;
+    
+}
+.timer{
+    text-align: right;
+    color: lightgray;
+    font-size: 10px;
+    position:absolute;
+    bottom:0;
+    right: 7px;
+}
+/* send message bar */
+.send-message{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.send-message input{
+    width: 80%;
+    padding:15px;
+    border: 1px solid #eaeaea;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.send-message > .icons{
+    color:grey;
+}
+
+
+
+/* ACTIVE CLASSES */
+.is-selected-contact{
+    background-color: #e9ebea;
+}
+.received{
+    text-align: left;
+    
+}
+.received > .single-chat{
+    background-color: white;
+}
+
+
+.sent{
+    text-align: right;
+}
+
+.sent > .single-chat{
+    background-color: #d5f9ba;
+}
+
+
+
+
+
+/* END WEB APP */
+
+
