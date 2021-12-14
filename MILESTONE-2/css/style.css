@@ -214,12 +214,16 @@ ul{
     max-width: 50%;
     min-width: 35%;
     margin: 20px 0;
+    position: relative;
     
 }
 .timer{
     text-align: right;
     color: lightgray;
     font-size: 10px;
+    position:absolute;
+    bottom:0;
+    right: 7px;
 }
 /* send message bar */
 .send-message{
