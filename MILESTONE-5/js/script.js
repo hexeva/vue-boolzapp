@@ -4,6 +4,7 @@ const app = new Vue ({
     el:'#root',
     data:{
         activeContact:0,
+        activeMessage:0,
         
         
 
@@ -98,7 +99,7 @@ const app = new Vue ({
         myAnswer:'',
         autoanswer:'ok',
         searchContacts:'',
-        isHidden:true,
+        showMenu:false,
 
         
         
@@ -146,9 +147,21 @@ const app = new Vue ({
             });
         },
 
-    showOptions:function(index){
-        
-    },
+     showOptions:function(index){
+         
+         
+         if(this.activeMessage === index){
+         this.showMenu = !this.showMenu;
+
+         }else{
+             this.activeMessage = index;
+             this.showMenu = true;
+
+         }
+
+
+     }
+   
  
  
        
@@ -157,7 +170,3 @@ const app = new Vue ({
 });
 
 
-
-// <div @click="selectThumb(index)" v-for="(element,index) in carouselSlides" class="single-thumb" :class="{'active':index === activeImg}">
-// <img :src="element.image" :alt="element.title">
-// </div> 

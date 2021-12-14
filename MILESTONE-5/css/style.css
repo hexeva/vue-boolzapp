@@ -243,6 +243,7 @@ ul{
     justify-content: center;
     align-items: center;
     filter: drop-shadow(2px 4px 3px black);
+    display: none;
 }
 
 .hidden-menu > div{
@@ -251,6 +252,7 @@ ul{
     color: gray;
     font-weight: bold;
     cursor: pointer;
+    
 }
 .timer{
     text-align: right;
@@ -300,8 +302,8 @@ ul{
     background-color: #d5f9ba;
 }
 
-.hidden{
-    display: none;
+.showMenu{
+    display:block;
 }
 
 

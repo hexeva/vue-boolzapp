@@ -108,8 +108,9 @@
                                             <span @click="showOptions(index)" class="icons chevron"><i class="fas fa-chevron-down"></i></span>
                                             <div class="main-text">{{messages.text}}</div>
                                             <div class="timer">{{messages.date}}</div>
+                                           
                                             <!-- menu a tendina -->
-                                            <div  class="hidden-menu" :class="{'hidden':index === activeContact}">
+                                            <div  class="hidden-menu" :class="{'showMenu':index === activeMessage && showMenu === true}">
                                                 <div class="text">Message info</div>
                                                 <div class="text">Delete message</div>
                                             </div>
