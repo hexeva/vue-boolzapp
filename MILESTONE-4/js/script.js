@@ -131,11 +131,18 @@ const app = new Vue ({
                 },1000);
 
             }
-            
+             
         },
         // end answer
         filterContacts:function(){
-            console.log('test');
+            this.contacts.forEach(element => {
+                
+                if(element.name.toLowerCase().includes(this.searchContacts.toLowerCase())){
+                    element.visible = true;
+                }else{
+                    element.visible = false;
+                }
+            });
         },
  
  

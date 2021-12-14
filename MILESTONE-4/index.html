@@ -82,7 +82,7 @@
                             <div class="contacts">
                                 <ul>
                                     <!-- single template -->
-                                    <li @click="contactChat(index)"  :class="{'is-selected-contact':index === activeContact} " v-for="(contact,index) in contacts">
+                                    <li v-if="contact.visible" @click="contactChat(index)"  :class="{'is-selected-contact':index === activeContact} " v-for="(contact,index) in contacts">
                                         <div class="single-contact">
                                             <div class="contact-icon"><img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name"></div>
                                             <div class="main-text">{{contact.name}}</div>
