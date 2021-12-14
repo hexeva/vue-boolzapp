@@ -119,31 +119,19 @@ const app = new Vue ({
                     date:this.messageDate,
                 });
                 this.myAnswer='';
+
+
+                setTimeout(() => {
+                    this.contacts[this.activeContact].messages.push({
+                        text:this.autoanswer,
+                        status:'received',
+                        date:this.messageDate,
+                    });
+                },1000);
+
             }
-            setTimeout(() => {
-                this.contacts[this.activeContact].messages.push({
-                    text:this.autoanswer,
-                    status:'received',
-                    date:this.messageDate,
-                });
-            },1000);
-   
+            
         },
-        // timeAnswer:function(){
-        //     setTimeout( () => {
-                
-                
-        //             this.contacts[this.activeContact].messages.push({
-        //                 text:this.autoanswer,
-        //                 status:'received',
-        //                 date:this.messageDate,
-        //             });
-                
-                
-
-
-        //     },1000);
-        // },
  
        
     }
