@@ -216,7 +216,7 @@ ul{
     display: inline-block;
     max-width: 50%;
     min-width: 35%;
-    margin: 20px 0;
+    margin: 35px 0;
     position: relative;
     
 }
@@ -238,12 +238,12 @@ ul{
     top: 25px;
     right: 7px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     filter: drop-shadow(2px 4px 3px black);
     display: none;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1;
 }
 
 .hidden-menu > div{
