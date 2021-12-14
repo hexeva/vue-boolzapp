@@ -96,8 +96,8 @@ const app = new Vue ({
         messageDate:dayjs().format("DD/MM/YYYY HH:MM:s"),
         accessDate:dayjs().format("HH:MM:s"),
         myAnswer:'',
-        
         autoanswer:'ok',
+
         
         
         
@@ -132,11 +132,10 @@ const app = new Vue ({
             }
             
         },
- 
+        // end answer function
+      
        
     }
-
-    
     // end methods
 });
-
+// END VUE

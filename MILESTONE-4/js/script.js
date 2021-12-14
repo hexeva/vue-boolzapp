@@ -96,8 +96,9 @@ const app = new Vue ({
         messageDate:dayjs().format("DD/MM/YYYY HH:MM:s"),
         accessDate:dayjs().format("HH:MM:s"),
         myAnswer:'',
-        
         autoanswer:'ok',
+        searchContacts:'',
+
         
         
         
@@ -132,6 +133,11 @@ const app = new Vue ({
             }
             
         },
+        // end answer
+        filterContacts:function(){
+            console.log('test');
+        },
+ 
  
        
     }

@@ -72,7 +72,7 @@
                                 
                                 <div class="input-wrapper">
                                     <span class="icons"><i class="fas fa-search"></i></span>
-                                    <input  type="search" placeholder="cerca o inizia una nuova chat">
+                                    <input @keyup="filterContacts()" v-model="searchContacts"  type="search" placeholder="cerca o inizia una nuova chat">
                                 </div>
                                 
                             </div>
