@@ -117,29 +117,38 @@ const app = new Vue ({
                     text:trimmedAnswer,
                     status:'sent',
                     date:this.messageDate,
-                    
                 });
-                
                 this.myAnswer='';
             }
-   
-        },
-        timeAnswer:function(){
-            setTimeout( () => {
-                
+            setTimeout(() => {
                 this.contacts[this.activeContact].messages.push({
                     text:this.autoanswer,
                     status:'received',
                     date:this.messageDate,
                 });
-
-
             },1000);
-        }
+   
+        },
+        // timeAnswer:function(){
+        //     setTimeout( () => {
+                
+                
+        //             this.contacts[this.activeContact].messages.push({
+        //                 text:this.autoanswer,
+        //                 status:'received',
+        //                 date:this.messageDate,
+        //             });
+                
+                
+
+
+        //     },1000);
+        // },
+ 
        
-        
-            
     }
+
+    
     // end methods
 });
 
